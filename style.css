@@ -511,7 +511,7 @@ h1 {
     font-size: 1.4rem;
     letter-spacing: 2px;
     margin-bottom: 25px;
-    color: var(--accent-gold);
+    color: white;
     text-transform: uppercase;
 }
 

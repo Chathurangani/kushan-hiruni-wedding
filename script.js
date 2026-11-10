@@ -369,7 +369,10 @@ function updateGalleryCounter(swiper) {
 
         current.textContent = swiper.realIndex + 1;
 
-        total.textContent = swiper.slides.length - swiper.loopedSlides * 2;
+       // total.textContent = swiper.slides.length - swiper.loopedSlides * 2;
+       // Count only the real slides, excluding Swiper's duplicated loop slides
+        const realSlides = document.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)');
+        total.textContent = realSlides.length
 
     }
 
